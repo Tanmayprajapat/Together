@@ -1,0 +1,32 @@
+.feed{
+    flex: 6;
+    
+    
+
+    /* overflow-y: scroll;
+    height:calc(100vh - 50px); */
+}
+/* ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(212, 205, 205);
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(199, 187, 187);
+  } */
+
+.feedWrapper{
+    padding: 20px;
+   
+}
