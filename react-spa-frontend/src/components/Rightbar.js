@@ -52,7 +52,7 @@ export default function Rightbar({user}) {
                 <div className="birthdayContainer">
                     <Cake htmlColor="#e012c1" fontSize="large" className="birthdayImg" />
                     <span className="birthdayText">
-                        <b>John Wick</b> and <b>3 other friends</b> have birthday today
+                        <b>Boris</b> and <b>3 other friends</b> have birthday today
                     </span>
                 </div>
                 <img src="/assets/4.jpg" alt="" className="rightbarAd" />

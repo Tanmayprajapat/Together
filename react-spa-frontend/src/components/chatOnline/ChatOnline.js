@@ -8,28 +8,28 @@ export default function ChatOnline() {
                     <img src="/assets/4.jpg" alt="" className="chatOnlineImg" />
                     <div className="chatOnlineBadge"></div>
                 </div>
-                <span className="chatOnlineName">John Wick</span> 
+                <span className="chatOnlineName">Benjamin</span> 
             </div>
             <div className="chatOnlineFriend">
                 <div className="chatOnlineImgContainer">
                     <img src="/assets/4.jpg" alt="" className="chatOnlineImg" />
                     <div className="chatOnlineBadge"></div>
                 </div>
-                <span className="chatOnlineName">John Wick</span> 
+                <span className="chatOnlineName">Boris</span> 
             </div>
             <div className="chatOnlineFriend">
                 <div className="chatOnlineImgContainer">
                     <img src="/assets/4.jpg" alt="" className="chatOnlineImg" />
                     <div className="chatOnlineBadge"></div>
                 </div>
-                <span className="chatOnlineName">John Wick</span> 
+                <span className="chatOnlineName">Anthony</span> 
             </div>
             <div className="chatOnlineFriend">
                 <div className="chatOnlineImgContainer">
                     <img src="/assets/4.jpg" alt="" className="chatOnlineImg" />
                     <div className="chatOnlineBadge"></div>
                 </div>
-                <span className="chatOnlineName">John Wick</span> 
+                <span className="chatOnlineName">Andrew</span> 
             </div>
         </div>
     )

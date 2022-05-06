@@ -10,11 +10,11 @@ export default function Login() {
     const password = useRef()
     const {user,isFetching,error,dispatch} = useContext(AuthContext)
 
-    const handleClick=(e)=>{
+    const handleClick= async (e)=>{
         e.preventDefault();
-        loginCall({email:email.current.value,password:password.current.value},dispatch);
+       const r =  await loginCall({email:email.current.value,password:password.current.value},dispatch);
+       console.log(r);
     }
-    console.log(user)
 
     return (
         <div className="login">

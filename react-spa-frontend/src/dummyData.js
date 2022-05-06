@@ -2,32 +2,32 @@ export const Users=[
     {
         id:1,
         profilePicture:"assets/11.jpg",
-        username:"Tansa",               
+        username:"Adam",               
     },
     {
         id:2,
         profilePicture:"assets/18.jpg",
-        username:"John cena",                
+        username:"Boris",                
     },
     {
         id:3,
         profilePicture:"assets/21.jpg",
-        username:"John Wich",                
+        username:"Blake",                
     },
     {
         id:4,
         profilePicture:"assets/7.jpg",
-        username:"Spiderman",               
+        username:"Benjamin",               
     },
     {
         id:5,
         profilePicture:"assets/4.jpg",
-        username:"John Carter",              
+        username:"Austin",              
     },
     {
         id:6,
         profilePicture:"assets/21.jpg",
-        username:"Undertaker",                
+        username:"Alan",                
     },
     
 ]
