@@ -62,3 +62,20 @@
     list-style: none;
 }
 
+.sidebarProfileImage {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .rightbarTitle{
+    margin-bottom: 10px;
+}
+
+.rightbarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

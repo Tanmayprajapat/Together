@@ -16,7 +16,7 @@ export default function Topbar() {
             <span className="logo">Together</span>
           </Link>
         </div>
-        <div className="topbarCenter">
+        <div className="topbarRight">
           <div className="searchBar">
             <Search className="searchIcon" />
             <input
@@ -26,7 +26,7 @@ export default function Topbar() {
           </div>
         </div>
 
-        <div className="topbarRight">
+        {/* <div className="topbarRight">
           <div className="topbarLinks">
             <span className="topbarLink">Homepage</span>
             <span className="topbarLink">Timeline</span>
@@ -62,7 +62,7 @@ export default function Topbar() {
               className="topbarImage"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

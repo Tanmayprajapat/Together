@@ -30,11 +30,13 @@ router.put("/:id",async (req,res)=>{
 })
 
 //delete post
-router.delete("/:id",async (req,res)=>{
+router.post("/:id",async (req,res)=>{
     try{
         const post=await Post.findById(req.params.id);
+        console.log(post)
+        console.log(req.body)
         if(post.userId===req.body.userId){
-            await Post.deleteOne()
+            await Post.deleteOne({_id:post._id})
             res.status(200).json("post deleted successfully")
         }
         else res.status(403).json("you can delete your post only")

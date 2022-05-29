@@ -7,12 +7,12 @@ import {Link} from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext'
 const PF = process.env.REACT_APP_PUBLIC_FOLDER
 
-export default function Post({post}) {
+export default function Post({post,deletePost}) {
     const [like,setLike]=useState(post.likes.length);
     const [isLike,setIsLike]=useState(false);
     const [user,setUser]=useState({})
     const {user:currentUser} = useContext(AuthContext)
-
+    
     useEffect(()=>{
         setIsLike(post.likes.includes(currentUser._id))
     },[currentUser._id,post.likes])
@@ -49,7 +49,7 @@ export default function Post({post}) {
                         <span className="postDate">{format(post.createdAt)}</span>
                     </div>
                     <div className="postTopRight">
-                        <MoreVert />
+                        <MoreVert onClick={()=>deletePost(post)}/>
                     </div>
                 </div>
                 <div className="postCenter">

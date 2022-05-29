@@ -24,7 +24,8 @@
 }
 .searchBar {
   display: flex;
-  width: 100%;
+  float: right;
+  width: 70%;
   background-color: white;
   height: 30px;
   border-radius: 30px;
@@ -45,9 +46,10 @@
 .topbarRight {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: end;
   color: white;
-  flex: 4;
+  flex: 2;
+  margin-right: 10px;
 }
 
 .topbarLink {

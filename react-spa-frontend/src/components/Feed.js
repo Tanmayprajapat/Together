@@ -7,6 +7,13 @@ import { AuthContext } from './context/AuthContext'
 export default function Feed({username,home}) {
     const [posts,setPosts]=useState([])
     const {user} = useContext(AuthContext)
+    const deletePost = async (post)=>{
+        try{
+            await axios.post("/posts/" + post._id, {userId:user._id})
+       }catch(err){
+           console.log(err)
+       }
+    }
     useEffect(()=>{
         const fetchPosts = async ()=>{
         const res=username ? await axios.get("/posts/profile/"+username) : await axios.get("posts/timeline/" + user._id)
@@ -16,20 +23,19 @@ export default function Feed({username,home}) {
         }))
         }
         fetchPosts();
-    },[username,user._id])
+    },[username,user._id,posts])
     return (
         <div className="feed">
              <div className="feedWrapper">
              {home ? <Share /> :username === user.username && <Share />} 
-                
+        
                 {
                     posts.map((p)=>(
                             
-                         <Post key={p._id} post={p}/>
+                         <Post key={p._id} post={p} deletePost={deletePost}/>
 
                     ))
                 }
-                
              </div>
         </div>
     )

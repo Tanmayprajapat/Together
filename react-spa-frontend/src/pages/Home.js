@@ -14,7 +14,7 @@ function Home() {
            <div className="homeContainer">
                <Sidebar />
                <Feed home />
-               <Rightbar />
+               {/* <Rightbar /> */}
            </div>
         </>
     )
