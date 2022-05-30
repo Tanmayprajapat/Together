@@ -19,7 +19,7 @@ export default function Sidebar() {
             <div className="sidebarWrapper">
                 <ul className="sidebarList">
                     <li className="sidebarListItem">
-                        <Link to={"/profile/" + user.username}>
+                        <Link className="link" to={"/profile/" + user.username}>
                             <img
                                 src={
                                     user.profilePicture
@@ -27,31 +27,31 @@ export default function Sidebar() {
                                     : PF + "empty-profile.png"
                                 }
                                 alt=""
-                                className="sidebarProfileImage"
+                                className="sidebarProfileImage sidebarIcon"
                             />
                             <span className="sidebarListItemText">Profile</span>
                         </Link>
                     </li>
                     <li className="sidebarListItem">
-                        <Link to={"/notification"}>
+                        <Link  className="link" to={"/notification"}>
                             <Notifications className="sidebarIcon"/>
                             <span className="sidebarListItemText">Notifications</span>
                         </Link>
                     </li>
                     <li className="sidebarListItem">
-                        <Link to={"/requests/"}>
+                        <Link  className="link" to={"/requests/"}>
                             <Person className="sidebarIcon"/>
                             <span className="sidebarListItemText">Requests</span>
                         </Link>
                     </li>
                     <li className="sidebarListItem">
-                        <Link to={"/"}>
+                        <Link  className="link" to={"/"}>
                             <RssFeed className="sidebarIcon" />
                             <span className="sidebarListItemText">Feed</span>
                         </Link>
                     </li>
                     <li className="sidebarListItem">
-                        <Link to={"/messenger/"}>
+                        <Link  className="link" to={"/messenger/"}>
                             <Chat className="sidebarIcon" />
                             <span className="sidebarListItemText">Chats</span>
                         </Link>
